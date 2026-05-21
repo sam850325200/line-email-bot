@@ -16,7 +16,7 @@ app.mount("/static", StaticFiles(directory=UPLOAD_DIR), name="static")
 
 # ⚠️ 請將這裡替換成你剛剛測試成功的 Token 與 User ID
 LINE_TOKEN = "+5KTKnXCdDKkzuu2JmUPtXne7qKo99PH0UJS0KQx24H/lUAnGheoIHTegJnWi0UYLb0iFHkDN6egB7UlPNZ8pRnX1+Ie0cN7+uxvQnhZ3mjxqhqJ02wpit0v7ZK91PhEADPAP86KEshV42nCIzrizAdB04t89/1O/w1cDnyilFU="
-USER_ID = "U8f6ab0ee99e29973cf9b2a535821b13e"
+USER_ID = "C1cf4c9655cd8eb863d5f7a5f5b8153c3"
 
 @app.post("/webhook/receive-pdf")
 async def receive_pdf(request: Request, file: UploadFile = File(...)):
